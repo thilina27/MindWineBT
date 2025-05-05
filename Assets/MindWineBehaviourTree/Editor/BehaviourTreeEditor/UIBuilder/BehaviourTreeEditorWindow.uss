@@ -1,0 +1,18 @@
+GridBackground {
+    --grid-background-color: rgb(40, 40, 40);
+    --line-color: rgba(193, 196, 192, 0.1);
+    --thick-line-color: rgba(193, 196, 192, 0.1);
+    --spacing: 15;
+}
+
+.inspectorLabel {
+    -unity-text-align: upper-center;
+    -unity-font-style: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: rgb(40, 40, 40);
+}
+
+.objectField {
+    margin-top: 5px;
+}

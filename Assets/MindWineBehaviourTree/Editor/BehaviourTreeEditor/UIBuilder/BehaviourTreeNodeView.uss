@@ -1,0 +1,156 @@
+#node-border {
+    background-color: rgb(56, 56, 56);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-left-color: rgb(56, 56, 56);
+    border-right-color: rgb(56, 56, 56);
+    border-top-color: rgb(56, 56, 56);
+    border-bottom-color: rgb(56, 56, 56);
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    -unity-text-align: upper-center;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    -unity-font-style: bold;
+}
+
+.selection {
+    border-left-color: rgb(0, 3, 255);
+    border-right-color: rgb(0, 3, 255);
+    border-top-color: rgb(0, 3, 255);
+    border-bottom-color: rgb(0, 3, 255);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.selection:hover {
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+}
+
+:selected > #selection-border {
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+}
+
+:hover:selected > #selection-border {
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+}
+
+.node {
+    min-width: 150px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+#divider {
+    min-height: 1px;
+    background-color: rgba(38, 38, 38, 0.69);
+}
+
+#input {
+    align-items: center;
+    justify-content: center;
+}
+
+.composite #input {
+    background-color: rgb(57, 162, 174);
+}
+
+.decorator #input {
+    background-color: rgb(242, 84, 91);
+}
+
+.root #input {
+    background-color: rgb(86, 29, 37);
+    min-height: 20px;
+}
+
+.leaf #input {
+    background-color: rgb(125, 222, 146);
+}
+
+#node-runtime-border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.running #node-runtime-border {
+    border-left-color: rgb(255, 194, 0);
+    border-right-color: rgb(255, 194, 0);
+    border-top-color: rgb(255, 194, 0);
+    border-bottom-color: rgb(255, 194, 0);
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.success #node-runtime-border {
+    border-left-color: rgba(41, 171, 7, 0.74);
+    border-right-color: rgba(41, 171, 7, 0.74);
+    border-top-color: rgba(41, 171, 7, 0.74);
+    border-bottom-color: rgba(41, 171, 7, 0.74);
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.failure #node-runtime-border {
+    border-left-color: rgba(255, 0, 0, 0.78);
+    border-right-color: rgba(255, 0, 0, 0.78);
+    border-top-color: rgba(255, 0, 0, 0.78);
+    border-bottom-color: rgba(255, 0, 0, 0.78);
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.description {
+    max-width: 200px;
+    text-overflow: clip;
+    white-space: normal;
+}

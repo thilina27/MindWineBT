@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/Editor/BehaviourTreeEditor/UIBuilder/BehaviourTreeNodeView.uss?fileID=7433441132597879392&amp;guid=3a8eefb8578c24f6eb2a3e53a0c43eac&amp;type=3#BehaviourTreeNodeView" />
+    <ui:VisualElement name="node-runtime-border" />
+    <ui:VisualElement name="node-border">
+        <ui:VisualElement name="contents">
+            <ui:VisualElement name="top">
+                <ui:VisualElement name="input" class="portCenter" />
+                <ui:VisualElement name="divider" class="vertical" />
+                <ui:VisualElement name="title">
+                    <ui:Label name="title-label" text="SequencerNode" class="unity-text-element unity-label title" />
+                    <ui:VisualElement name="title-button-container">
+                        <ui:VisualElement name="collapse-button">
+                            <ui:VisualElement name="icon" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="divider" class="vertical" />
+                <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="description" class="description" />
+                <ui:VisualElement name="output" class="portCenter" />
+                <ui:VisualElement name="divider" class="vertical" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="selection-border" picking-mode="Ignore" class="selection" />
+</ui:UXML>

@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8978041961504447368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae56293b885c44b694dbfd65dba51af5, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  Blackboard:
+    DeltaTime: 0
+    SampleInt: 0
+    SampleFloat: 0
+    SampleBool: 0
+    SampleString: 
+  Guid: 183998c4-8652-444d-8812-fd55f08a65cd
+  Position: {x: 212, y: 58}
+  <Child>k__BackingField: {fileID: 7680747714607944327}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc8cbdb4532423d8217521f76f1ac20, type: 3}
+  m_Name: ai Tree
+  m_EditorClassIdentifier: 
+  <State>k__BackingField: 0
+  <RootNode>k__BackingField: {fileID: -8978041961504447368}
+  <Nodes>k__BackingField:
+  - {fileID: -8978041961504447368}
+  - {fileID: 4323362848083383010}
+  - {fileID: 7680747714607944327}
+  - {fileID: 6989532442366761752}
+  _blackboard:
+    DeltaTime: 0
+    SampleInt: 0
+    SampleFloat: 0
+    SampleBool: 0
+    SampleString: 
+--- !u!114 &4323362848083383010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c4f0542923842f98b5b7b72a54a05de, type: 3}
+  m_Name: FailNode
+  m_EditorClassIdentifier: 
+  Blackboard:
+    DeltaTime: 0
+    SampleInt: 0
+    SampleFloat: 0
+    SampleBool: 0
+    SampleString: 
+  Guid: a42ba6d2-3445-424f-bfda-e25668c59c50
+  Position: {x: 378, y: 404}
+--- !u!114 &6989532442366761752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7c2ce7e884f47069bc9d5e241613d85, type: 3}
+  m_Name: LogNode
+  m_EditorClassIdentifier: 
+  Blackboard:
+    DeltaTime: 0
+    SampleInt: 0
+    SampleFloat: 0
+    SampleBool: 0
+    SampleString: 
+  Guid: fdfeed40-120d-4076-be43-a2bb6ed3851e
+  Position: {x: 107, y: 427.5}
+  _message: 
+--- !u!114 &7680747714607944327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ea43d6361a74d66bcc4a5f8d15349a2, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  Blackboard:
+    DeltaTime: 0
+    SampleInt: 0
+    SampleFloat: 0
+    SampleBool: 0
+    SampleString: 
+  Guid: 96a1d4ad-6f2d-4565-ba63-1f99bce042b9
+  Position: {x: 212, y: 190}
+  <Children>k__BackingField:
+  - {fileID: 6989532442366761752}
+  - {fileID: 4323362848083383010}
