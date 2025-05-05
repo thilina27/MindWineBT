@@ -1,5 +1,7 @@
 # MindWineBT
 
+![MindWine BT Screenshot](Img/MBT.png)
+
 # 🧠 Behaviour Tree System for Unity
 
 A modular, extensible Behaviour Tree framework for game AI — designed for clarity, flexibility, and performance.
