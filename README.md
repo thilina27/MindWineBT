@@ -2,7 +2,7 @@
 
 ![MindWine BT Screenshot](Img/MBT.png)
 
-# 🧠 Behaviour Tree System for Unity
+# 🧠 Behaviour Tree System for Unity 2022.3
 
 A modular, extensible Behaviour Tree framework for game AI — designed for clarity, flexibility, and performance.
 
@@ -63,6 +63,7 @@ Check sample scene.
 
 - [x] Visual editor for Unity
 - [x] Blackboard system for shared data
+- [ ] Add Unity 6 version
 - [ ] Async node support
 
 ## 📄 License
