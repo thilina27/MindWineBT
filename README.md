@@ -43,7 +43,7 @@ Clone this repository:
 git clone https://github.com/thilina27/MindWineBT
 ```
 
-Then includes a unity project with BT. If you only need the BT you can copy over only the `MindWineBehaviourTree` directory to your project.
+This includes a unity project with BT. If you only need the BT you can copy over only the `MindWineBehaviourTree` directory to your project.
 
 ### 🧱 Example Usage
 
