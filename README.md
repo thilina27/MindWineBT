@@ -64,7 +64,6 @@ Check sample scene.
 - [x] Visual editor for Unity
 - [x] Blackboard system for shared data
 - [ ] Add Unity 6 version
-- [ ] Async node support
 
 ## 📄 License
 
