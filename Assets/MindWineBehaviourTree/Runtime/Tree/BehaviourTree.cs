@@ -20,15 +20,6 @@ namespace BT.Runtime.Tree
         [SerializeField] private Blackboard _blackboard;
         
         public Blackboard Blackboard => _blackboard;
-
-        /// <summary>
-        /// Setup blackboard to the tree
-        /// </summary>
-        /// <param name="blackboard"></param>
-        public void SetBlackboard(Blackboard blackboard)
-        {
-            _blackboard = blackboard;
-        }
         
         /// <summary>
         /// Clone tree

@@ -10,15 +10,13 @@ namespace BT.Runtime.Runner
         [SerializeField] private BehaviourTree _tree;
 
         public BehaviourTree Tree => _tree;
-        private void Awake()
+        protected virtual void Awake()
         {
-            // if we need a custom blackboard set using 
-            // _tree.SetBlackboard(blackboard);
-            _tree = _tree.Clone();
+            _tree = _tree.Clone(); 
             _tree.Bind();
         }
 
-        private void Update()
+        protected virtual void Update()
         {
             _tree.UpdateTree();
             _tree.SetDeltaTime(Time.deltaTime);
