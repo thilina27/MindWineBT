@@ -167,6 +167,11 @@ namespace BT.Editor.BehaviourTreeEditor
 
         private void ShowTreeView(BehaviourTree tree)
         {
+            if (_behaviourTreeVew == null)
+            {
+                return;
+            }
+            
             _behaviourTreeVew.PopulateView(tree);
             if (tree != null)
             {

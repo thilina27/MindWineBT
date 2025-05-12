@@ -12,6 +12,8 @@ namespace BT.Runtime.Runner
         public BehaviourTree Tree => _tree;
         private void Awake()
         {
+            // if we need a custom blackboard set using 
+            // _tree.SetBlackboard(blackboard);
             _tree = _tree.Clone();
             _tree.Bind();
         }

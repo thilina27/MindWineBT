@@ -19,16 +19,19 @@ namespace BT.Runtime.Tree
 
         [SerializeField] private Blackboard _blackboard = new();
 
-        public NodeState UpdateTree()
+        /// <summary>
+        /// Setup blackboard to the tree
+        /// </summary>
+        /// <param name="blackboard"></param>
+        public void SetBlackboard(Blackboard blackboard)
         {
-            if (State is NodeState.Running)
-            {
-                State = RootNode.UpdateNode();
-            }
-
-            return State is NodeState.Running ? State : NodeState.Success;
+            _blackboard = blackboard;
         }
-
+        
+        /// <summary>
+        /// Clone tree
+        /// </summary>
+        /// <returns></returns>
         public BehaviourTree Clone()
         {
             var clone = Instantiate(this);
@@ -39,15 +42,30 @@ namespace BT.Runtime.Tree
         }
 
         /// <summary>
+        /// Bind blackboard to nodes.
         /// Bind any outside data to nodes
         /// Modify this accordingly
         /// </summary>
-        public void Bind()
+        public virtual void Bind()
         {
             Traverse(RootNode, node => node.Blackboard = _blackboard);
         }
+        
+        /// <summary>
+        /// Update tree
+        /// </summary>
+        /// <returns></returns>
+        public NodeState UpdateTree()
+        {
+            if (State is NodeState.Running)
+            {
+                State = RootNode.UpdateNode();
+            }
 
-        private void Traverse(BehaviourTreeNode node, Action<BehaviourTreeNode> visitedCallback)
+            return State is NodeState.Running ? State : NodeState.Success;
+        }
+
+        protected void Traverse(BehaviourTreeNode node, Action<BehaviourTreeNode> visitedCallback)
         {
             visitedCallback?.Invoke(node);
             var children = GetChildren(node);

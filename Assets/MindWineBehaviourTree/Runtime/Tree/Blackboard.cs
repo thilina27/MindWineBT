@@ -11,9 +11,5 @@ namespace BT.Runtime.Tree
     public class Blackboard
     {
         public float DeltaTime;
-        public int SampleInt;
-        public float SampleFloat;
-        public bool SampleBool;
-        public string SampleString;
     }
 }

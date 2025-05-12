@@ -18,8 +18,6 @@ namespace BT.Runtime.Sample
         }
         protected override NodeState OnUpdate()
         {
-            Debug.Log($"fail node : {Blackboard.SampleString} {Blackboard.SampleInt}");
-            Blackboard.SampleFloat += 1;
             return NodeState.Failure;
         }
         protected override void OnStop()
