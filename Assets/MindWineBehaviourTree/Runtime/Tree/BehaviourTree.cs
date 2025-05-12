@@ -17,7 +17,9 @@ namespace BT.Runtime.Tree
         [field: SerializeField] public BehaviourTreeNode RootNode { get; private set; }
         [field: SerializeField] public List<BehaviourTreeNode> Nodes { get; private set; } = new();
 
-        [SerializeField] private Blackboard _blackboard = new();
+        [SerializeField] private Blackboard _blackboard;
+        
+        public Blackboard Blackboard => _blackboard;
 
         /// <summary>
         /// Setup blackboard to the tree
@@ -36,6 +38,9 @@ namespace BT.Runtime.Tree
         {
             var clone = Instantiate(this);
             clone.RootNode = RootNode.Clone();
+            
+            clone._blackboard = Instantiate(_blackboard);
+            
             clone.Nodes = new List<BehaviourTreeNode>();
             Traverse(clone.RootNode, node => clone.Nodes.Add(node));
             return clone;

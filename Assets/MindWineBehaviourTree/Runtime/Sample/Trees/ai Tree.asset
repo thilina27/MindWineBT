@@ -12,12 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae56293b885c44b694dbfd65dba51af5, type: 3}
   m_Name: RootNode
   m_EditorClassIdentifier: 
-  Blackboard:
-    DeltaTime: 0
-    SampleInt: 0
-    SampleFloat: 0
-    SampleBool: 0
-    SampleString: 
+  Blackboard: {fileID: 0}
   Guid: 183998c4-8652-444d-8812-fd55f08a65cd
   Position: {x: 212, y: 58}
   <Child>k__BackingField: {fileID: 7680747714607944327}
@@ -40,12 +35,7 @@ MonoBehaviour:
   - {fileID: 4323362848083383010}
   - {fileID: 7680747714607944327}
   - {fileID: 6989532442366761752}
-  _blackboard:
-    DeltaTime: 0
-    SampleInt: 0
-    SampleFloat: 0
-    SampleBool: 0
-    SampleString: 
+  _blackboard: {fileID: 11400000, guid: 802a6c0ae7aa34ae2acd28acc91200ac, type: 2}
 --- !u!114 &4323362848083383010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,12 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c4f0542923842f98b5b7b72a54a05de, type: 3}
   m_Name: FailNode
   m_EditorClassIdentifier: 
-  Blackboard:
-    DeltaTime: 0
-    SampleInt: 0
-    SampleFloat: 0
-    SampleBool: 0
-    SampleString: 
+  Blackboard: {fileID: 0}
   Guid: a42ba6d2-3445-424f-bfda-e25668c59c50
   Position: {x: 378, y: 404}
 --- !u!114 &6989532442366761752
@@ -78,12 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7c2ce7e884f47069bc9d5e241613d85, type: 3}
   m_Name: LogNode
   m_EditorClassIdentifier: 
-  Blackboard:
-    DeltaTime: 0
-    SampleInt: 0
-    SampleFloat: 0
-    SampleBool: 0
-    SampleString: 
+  Blackboard: {fileID: 0}
   Guid: fdfeed40-120d-4076-be43-a2bb6ed3851e
   Position: {x: 107, y: 427.5}
   _message: 
@@ -99,12 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea43d6361a74d66bcc4a5f8d15349a2, type: 3}
   m_Name: SequencerNode
   m_EditorClassIdentifier: 
-  Blackboard:
-    DeltaTime: 0
-    SampleInt: 0
-    SampleFloat: 0
-    SampleBool: 0
-    SampleString: 
+  Blackboard: {fileID: 0}
   Guid: 96a1d4ad-6f2d-4565-ba63-1f99bce042b9
   Position: {x: 212, y: 190}
   <Children>k__BackingField:

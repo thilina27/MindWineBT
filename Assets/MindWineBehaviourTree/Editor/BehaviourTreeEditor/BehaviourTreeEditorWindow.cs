@@ -18,11 +18,7 @@ namespace BT.Editor.BehaviourTreeEditor
 
         private BehaviourTreeVew _behaviourTreeVew;
         private InspectorView _inspectorView;
-
-        //blackboard
-        private IMGUIContainer _blackboardContainer;
-        private SerializedObject _serializedTree;
-        private SerializedProperty _blackboardProperty;
+        private BlackBoardView _blackboardView;
 
         // filed to set tree SO
         private ObjectField _behaviourTreeField;
@@ -62,32 +58,13 @@ namespace BT.Editor.BehaviourTreeEditor
 
             _inspectorView = root.Q<InspectorView>();
 
+            _blackboardView = root.Q<BlackBoardView>();
+
             // get object field and add callbacks 
             _behaviourTreeField = root.Q<ObjectField>("TreeAsset");
             _behaviourTreeField?.RegisterValueChangedCallback(OnTreeChanged);
-
-            // blackboard
-            _blackboardContainer = root.Q<IMGUIContainer>();
-            _blackboardContainer.onGUIHandler = () =>
-            {
-                if (_serializedTree == null)
-                {
-                    return;
-                }
-
-                if (_serializedTree.targetObject == null)
-                {
-                    return;
-                }
-
-                // do update to reflect any changes done via code
-                _serializedTree.Update();
-                EditorGUILayout.PropertyField(_blackboardProperty);
-                // apply any change done via ui to the property
-                _serializedTree.ApplyModifiedProperties();
-            };
-
-            _behaviourTreeVew.OnNodeSelected = node => _inspectorView.CreateInspectorVew(node);
+            
+            _behaviourTreeVew.OnNodeSelected = node => _inspectorView.CreateInspectorView(node);
         }
         private void OnTreeChanged(ChangeEvent<Object> evt)
         {
@@ -175,8 +152,7 @@ namespace BT.Editor.BehaviourTreeEditor
             _behaviourTreeVew.PopulateView(tree);
             if (tree != null)
             {
-                _serializedTree = new SerializedObject(tree);
-                _blackboardProperty = _serializedTree.FindProperty("_blackboard");
+                _blackboardView.CreateView(tree.Blackboard);
             }
         }
 

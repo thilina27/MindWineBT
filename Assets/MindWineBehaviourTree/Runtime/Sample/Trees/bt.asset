@@ -12,12 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7c2ce7e884f47069bc9d5e241613d85, type: 3}
   m_Name: LogNode
   m_EditorClassIdentifier: 
-  Blackboard:
-    DeltaTime: 0
-    SampleInt: 0
-    SampleFloat: 0
-    SampleBool: 0
-    SampleString: 
+  Blackboard: {fileID: 0}
   Guid: f08b6a63-8f10-4bb5-83df-0ff247e1a732
   Position: {x: 636.49994, y: 425.1}
   _message: '******'
@@ -33,12 +28,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7c2ce7e884f47069bc9d5e241613d85, type: 3}
   m_Name: LogNode
   m_EditorClassIdentifier: 
-  Blackboard:
-    DeltaTime: 0
-    SampleInt: 0
-    SampleFloat: 0
-    SampleBool: 0
-    SampleString: 
+  Blackboard: {fileID: 0}
   Guid: d712ca50-7e8e-4f29-9066-08ab72111447
   Position: {x: 389.5, y: 447.5}
   _message: 
@@ -54,12 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7c2ce7e884f47069bc9d5e241613d85, type: 3}
   m_Name: LogNode
   m_EditorClassIdentifier: 
-  Blackboard:
-    DeltaTime: 0
-    SampleInt: 0
-    SampleFloat: 0
-    SampleBool: 0
-    SampleString: 
+  Blackboard: {fileID: 0}
   Guid: f788458c-8070-48b6-b36a-abaa3e4d0343
   Position: {x: -204, y: 447.5}
   _message: 
@@ -75,12 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29c4da1d0d5f4cebbf523c98c2b408cd, type: 3}
   m_Name: TickWaitNode
   m_EditorClassIdentifier: 
-  Blackboard:
-    DeltaTime: 0
-    SampleInt: 0
-    SampleFloat: 0
-    SampleBool: 0
-    SampleString: 
+  Blackboard: {fileID: 0}
   Guid: 5e313692-bfdf-4c6c-a555-90282bdbb6a3
   Position: {x: -20, y: 447.5}
   _waitForTicks: 1000
@@ -96,12 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c4f0542923842f98b5b7b72a54a05de, type: 3}
   m_Name: FailNode
   m_EditorClassIdentifier: 
-  Blackboard:
-    DeltaTime: 0
-    SampleInt: 0
-    SampleFloat: 0
-    SampleBool: 0
-    SampleString: 
+  Blackboard: {fileID: 0}
   Guid: 576ac9a1-a7a2-441f-a81b-71dc762731df
   Position: {x: 151, y: 447.5}
 --- !u!114 &-244109942011213585
@@ -116,12 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7c2ce7e884f47069bc9d5e241613d85, type: 3}
   m_Name: LogNode
   m_EditorClassIdentifier: 
-  Blackboard:
-    DeltaTime: 0
-    SampleInt: 0
-    SampleFloat: 0
-    SampleBool: 0
-    SampleString: 
+  Blackboard: {fileID: 0}
   Guid: e62fdb31-3c1e-4545-91c3-2ee4878500ae
   Position: {x: -407, y: 447.5}
   _message: 11
@@ -151,12 +121,7 @@ MonoBehaviour:
   - {fileID: 7371094959566912315}
   - {fileID: -8281942312674238637}
   - {fileID: 4012326056409933965}
-  _blackboard:
-    DeltaTime: 0
-    SampleInt: 500
-    SampleFloat: 0
-    SampleBool: 0
-    SampleString: 
+  _blackboard: {fileID: 11400000, guid: 802a6c0ae7aa34ae2acd28acc91200ac, type: 2}
 --- !u!114 &632657757841997523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,12 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae56293b885c44b694dbfd65dba51af5, type: 3}
   m_Name: RootNode
   m_EditorClassIdentifier: 
-  Blackboard:
-    DeltaTime: 0
-    SampleInt: 0
-    SampleFloat: 0
-    SampleBool: 0
-    SampleString: 
+  Blackboard: {fileID: 0}
   Guid: 421d840d-a017-4fa4-bee7-05835a941eaa
   Position: {x: 239.5, y: -89.160034}
   <Child>k__BackingField: {fileID: 2792215821094838675}
@@ -190,12 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cb64e5c3e0647d9bc8be7b33f51e345, type: 3}
   m_Name: RepeaterNode
   m_EditorClassIdentifier: 
-  Blackboard:
-    DeltaTime: 0
-    SampleInt: 0
-    SampleFloat: 0
-    SampleBool: 0
-    SampleString: 
+  Blackboard: {fileID: 0}
   Guid: 7f16d155-751f-4d55-831d-6b9342e14493
   Position: {x: 239.5, y: 47.5}
   <Child>k__BackingField: {fileID: 4012326056409933965}
@@ -211,12 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 084ae0aca6944650b04bd303029998b3, type: 3}
   m_Name: SelectorNode
   m_EditorClassIdentifier: 
-  Blackboard:
-    DeltaTime: 0
-    SampleInt: 0
-    SampleFloat: 0
-    SampleBool: 0
-    SampleString: 
+  Blackboard: {fileID: 0}
   Guid: 0d1413e8-32c8-4ffa-9ed9-c78d253845fc
   Position: {x: 239.5, y: 205.5}
   <Children>k__BackingField:
@@ -234,12 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea43d6361a74d66bcc4a5f8d15349a2, type: 3}
   m_Name: SequencerNode
   m_EditorClassIdentifier: 
-  Blackboard:
-    DeltaTime: 0
-    SampleInt: 0
-    SampleFloat: 0
-    SampleBool: 0
-    SampleString: 
+  Blackboard: {fileID: 0}
   Guid: 7618a0b7-eabb-48bd-8e87-4fe574432da5
   Position: {x: -67, y: 253}
   <Children>k__BackingField:
@@ -260,12 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea43d6361a74d66bcc4a5f8d15349a2, type: 3}
   m_Name: SequencerNode
   m_EditorClassIdentifier: 
-  Blackboard:
-    DeltaTime: 0
-    SampleInt: 0
-    SampleFloat: 0
-    SampleBool: 0
-    SampleString: 
+  Blackboard: {fileID: 0}
   Guid: ac0702f1-eff3-4be9-badc-01236222cf97
   Position: {x: 636.28503, y: 253}
   <Children>k__BackingField:
