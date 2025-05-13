@@ -16,16 +16,13 @@ namespace BT.Runtime.Nodes.CompositeNodes
         }
         protected override NodeState OnUpdate()
         {
-            var childState = Children[_currentChildIndex].UpdateNode();
+            State = Children[_currentChildIndex].UpdateNode();
 
-            switch (childState)
+            switch (State)
             {
                 case NodeState.Running:
-                    State = NodeState.Running;
-                    break;
                 case NodeState.Success:
-                    State = NodeState.Success;
-                    break;
+                    return State;
                 case NodeState.Failure:
                     _currentChildIndex++;
                     State = _currentChildIndex == Children.Count ? NodeState.Failure : NodeState.Running;

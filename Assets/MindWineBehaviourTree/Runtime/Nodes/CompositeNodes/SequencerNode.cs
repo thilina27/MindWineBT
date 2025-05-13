@@ -3,7 +3,7 @@
 namespace BT.Runtime.Nodes.CompositeNodes
 {
     /// <summary>
-    /// This executes each child in order
+    /// This executes each child in order, behave as an and Node.
     /// if last one is success this node is also success.
     /// If one fail this node fails
     /// </summary>
