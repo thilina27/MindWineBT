@@ -3,25 +3,35 @@
 namespace BT.Runtime.Nodes.CompositeNodes
 {
     /// <summary>
-    /// This run its chits regardless of the status of each child
-    /// Fail if all children fails
+    /// This run its children. Behave like a OR node.
+    /// This return success if any child success, fail if all child fails.
     /// </summary>
     public class SelectorNode : CompositeNode
     {
-
         private int _currentChildIndex;
+        
         protected override void OnStart()
         {
             _currentChildIndex = 0;
         }
         protected override NodeState OnUpdate()
         {
-            if (Children[_currentChildIndex].UpdateNode() != NodeState.Running)
+            var childState = Children[_currentChildIndex].UpdateNode();
+
+            switch (childState)
             {
-                _currentChildIndex++;
+                case NodeState.Running:
+                    State = NodeState.Running;
+                    break;
+                case NodeState.Success:
+                    State = NodeState.Success;
+                    break;
+                case NodeState.Failure:
+                    _currentChildIndex++;
+                    State = _currentChildIndex == Children.Count ? NodeState.Failure : NodeState.Running;
+                    break;
             }
 
-            State = _currentChildIndex == Children.Count ? NodeState.Success : NodeState.Running;
             return State;
         }
         protected override void OnStop()
