@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: LogNode
   m_EditorClassIdentifier: 
   Blackboard: {fileID: 0}
+  _description: 
   Guid: f08b6a63-8f10-4bb5-83df-0ff247e1a732
   Position: {x: 636.49994, y: 425.1}
   _message: '******'
@@ -29,6 +30,7 @@ MonoBehaviour:
   m_Name: LogNode
   m_EditorClassIdentifier: 
   Blackboard: {fileID: 0}
+  _description: 
   Guid: d712ca50-7e8e-4f29-9066-08ab72111447
   Position: {x: 389.5, y: 447.5}
   _message: 
@@ -45,6 +47,7 @@ MonoBehaviour:
   m_Name: LogNode
   m_EditorClassIdentifier: 
   Blackboard: {fileID: 0}
+  _description: 
   Guid: f788458c-8070-48b6-b36a-abaa3e4d0343
   Position: {x: -204, y: 447.5}
   _message: 
@@ -61,6 +64,7 @@ MonoBehaviour:
   m_Name: TickWaitNode
   m_EditorClassIdentifier: 
   Blackboard: {fileID: 0}
+  _description: 
   Guid: 5e313692-bfdf-4c6c-a555-90282bdbb6a3
   Position: {x: -20, y: 447.5}
   _waitForTicks: 1000
@@ -77,6 +81,7 @@ MonoBehaviour:
   m_Name: FailNode
   m_EditorClassIdentifier: 
   Blackboard: {fileID: 0}
+  _description: 
   Guid: 576ac9a1-a7a2-441f-a81b-71dc762731df
   Position: {x: 151, y: 447.5}
 --- !u!114 &-244109942011213585
@@ -92,9 +97,10 @@ MonoBehaviour:
   m_Name: LogNode
   m_EditorClassIdentifier: 
   Blackboard: {fileID: 0}
+  _description: 
   Guid: e62fdb31-3c1e-4545-91c3-2ee4878500ae
   Position: {x: -407, y: 447.5}
-  _message: 11
+  _message: 55
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,6 +141,7 @@ MonoBehaviour:
   m_Name: RootNode
   m_EditorClassIdentifier: 
   Blackboard: {fileID: 0}
+  _description: This is root
   Guid: 421d840d-a017-4fa4-bee7-05835a941eaa
   Position: {x: 239.5, y: -89.160034}
   <Child>k__BackingField: {fileID: 2792215821094838675}
@@ -151,6 +158,7 @@ MonoBehaviour:
   m_Name: RepeaterNode
   m_EditorClassIdentifier: 
   Blackboard: {fileID: 0}
+  _description: 
   Guid: 7f16d155-751f-4d55-831d-6b9342e14493
   Position: {x: 239.5, y: 47.5}
   <Child>k__BackingField: {fileID: 4012326056409933965}
@@ -167,6 +175,7 @@ MonoBehaviour:
   m_Name: SelectorNode
   m_EditorClassIdentifier: 
   Blackboard: {fileID: 0}
+  _description: 
   Guid: 0d1413e8-32c8-4ffa-9ed9-c78d253845fc
   Position: {x: 239.5, y: 205.5}
   <Children>k__BackingField:
@@ -185,6 +194,7 @@ MonoBehaviour:
   m_Name: SequencerNode
   m_EditorClassIdentifier: 
   Blackboard: {fileID: 0}
+  _description: normal seq
   Guid: 7618a0b7-eabb-48bd-8e87-4fe574432da5
   Position: {x: -67, y: 253}
   <Children>k__BackingField:
@@ -206,6 +216,7 @@ MonoBehaviour:
   m_Name: SequencerNode
   m_EditorClassIdentifier: 
   Blackboard: {fileID: 0}
+  _description: idle
   Guid: ac0702f1-eff3-4be9-badc-01236222cf97
   Position: {x: 636.28503, y: 253}
   <Children>k__BackingField:

@@ -7,6 +7,7 @@ using BT.Runtime.Nodes.DecoratorNodes;
 using BT.Runtime.Nodes.LeafNodes;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
+using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -40,7 +41,8 @@ namespace BT.Editor.BehaviourTreeEditor
 
             // description 
             var description = this.Q<Label>("description");
-            description.text = treeNode.NodeDescription;
+            description.bindingPath = treeNode.NodeDescriptionBind;
+            description.Bind(new SerializedObject(BehaviourTreeNode));
         }
 
         private void CreateInputPorts()

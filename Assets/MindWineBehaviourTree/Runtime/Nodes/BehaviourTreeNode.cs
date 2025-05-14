@@ -19,9 +19,9 @@ namespace BT.Runtime.Nodes
 
         // override to show description for node
         // use text area
-        public virtual string NodeDescription => string.Empty;
-
-
+        [TextArea] [SerializeField] private string _description;
+        public string NodeDescriptionBind => nameof(_description);
+        
         // used for graph editor
         [HideInInspector] public string Guid;
         [HideInInspector] public Vector2 Position;

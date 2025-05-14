@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: RootNode
   m_EditorClassIdentifier: 
   Blackboard: {fileID: 0}
+  _description: Root node
   Guid: 183998c4-8652-444d-8812-fd55f08a65cd
   Position: {x: 212, y: 58}
   <Child>k__BackingField: {fileID: 7680747714607944327}
@@ -49,6 +50,7 @@ MonoBehaviour:
   m_Name: FailNode
   m_EditorClassIdentifier: 
   Blackboard: {fileID: 0}
+  _description: 
   Guid: a42ba6d2-3445-424f-bfda-e25668c59c50
   Position: {x: 378, y: 404}
 --- !u!114 &6989532442366761752
@@ -64,6 +66,7 @@ MonoBehaviour:
   m_Name: LogNode
   m_EditorClassIdentifier: 
   Blackboard: {fileID: 0}
+  _description: 
   Guid: fdfeed40-120d-4076-be43-a2bb6ed3851e
   Position: {x: 107, y: 427.5}
   _message: 
@@ -80,6 +83,7 @@ MonoBehaviour:
   m_Name: SequencerNode
   m_EditorClassIdentifier: 
   Blackboard: {fileID: 0}
+  _description: 
   Guid: 96a1d4ad-6f2d-4565-ba63-1f99bce042b9
   Position: {x: 212, y: 190}
   <Children>k__BackingField:

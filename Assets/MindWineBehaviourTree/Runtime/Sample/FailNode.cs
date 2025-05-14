@@ -11,7 +11,6 @@ namespace BT.Runtime.Sample
     public class FailNode : LeafNode
     {
         public override string NodeName => "Fail node";
-        public override string NodeDescription => "This node fails regardless. always be failed node ";
 
         protected override void OnStart()
         {
