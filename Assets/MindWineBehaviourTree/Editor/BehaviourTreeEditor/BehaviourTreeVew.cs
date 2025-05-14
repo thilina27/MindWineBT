@@ -230,6 +230,11 @@ namespace BT.Editor.BehaviourTreeEditor
 
         private void CreateMenuItem(Type type, string defaultMenu, string defaultItemName, ContextualMenuPopulateEvent evt)
         {
+            if (type.IsAbstract)
+            {
+                return;
+            }
+            
             var attribute = type.GetCustomAttribute<CreateNodeMenu>();
             var menuName = defaultMenu;
             var itemName = defaultItemName;
