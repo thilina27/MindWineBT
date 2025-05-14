@@ -23,7 +23,7 @@ namespace BT.Editor.BehaviourTreeEditor
         // filed to set tree SO
         private ObjectField _behaviourTreeField;
 
-        [MenuItem("Tool/MindWine/BehaviourTreeEditorWindow")]
+        [MenuItem("Tools/MindWine/BehaviourTreeEditorWindow")]
         public static void ShowWindow()
         {
             var wnd = GetWindow<BehaviourTreeEditorWindow>();
